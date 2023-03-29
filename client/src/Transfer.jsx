@@ -32,8 +32,7 @@ function Transfer({ address, setBalance, privateKey }) {
       });
       setBalance(balance);
     } catch (ex) {
-      console.log(ex);
-      alert(ex.response.data.message);
+      alert(ex);
     }
   }
 
@@ -51,7 +50,7 @@ function Transfer({ address, setBalance, privateKey }) {
       </label>
 
       <label>
-        Recipient
+        Recipient (Without 0x prefix)
         <input
           placeholder="Type an address, for example: 0x2"
           value={recipient}

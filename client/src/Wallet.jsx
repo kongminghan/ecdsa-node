@@ -33,7 +33,7 @@ function Wallet({
       <h1>Your Wallet</h1>
 
       <label>
-        Private Key
+        Private Key (Without 0x prefix)
         <input
           placeholder="Type a private key, for example: 0x1"
           value={privateKey}
